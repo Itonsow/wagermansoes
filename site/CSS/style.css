@@ -1,0 +1,168 @@
+/* Centraliza */
+centralizar {
+    text-align: center;
+}
+
+/* ARRUMAR LAYOUT DO HTML */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER */
+header {
+    background-color: #f5f5f5;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    font-weight: bold;
+    border-bottom: 2px solid #333;
+}
+
+header img {
+    max-width: 100px;
+    height: 45px;
+}
+
+header ul {
+    align-items: center;
+    list-style: none;
+    display: flex;
+}
+
+header li {
+    margin-right: 50px;
+    color:#333;
+}
+
+header p {
+    flex: 1;
+    color: black;
+    padding-top: 10px;
+}
+
+/* FONTE DO CORPO*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: black;
+}
+
+/* LINKS */
+a {
+    color: blue;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: purple;
+}
+
+/* CAPA */
+#imgprincipal {
+    height: 740px;
+    text-align: center;  
+    background-image: url(../IMG/471270.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 0;
+
+    &::before
+    {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
+        z-index: -1;
+    }
+}
+
+/* conteúdo principal */
+main {
+    padding: 0px;
+}
+
+main img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.imgcomtexto {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.imgcomtexto img {
+    max-width: 100%;
+    height: auto;
+    margin-right: 60px; /* Espaço entre a imagem e o texto */
+}
+
+.imgcomtexto p {
+    font-size: 30px;
+    color: #333;
+}
+
+.imgcomtexto h1{
+    font-size: 70px;
+    color: #333;
+}
+
+/* Copyright */
+footer {
+    text-align: center;
+    background-color: black;
+    color: #ffffff;
+    padding: 10px;
+}
+
+.barramento {
+    height: 100px;
+    background-color: black;
+}
+
+input[type=text], [type=number], input[type=email] {
+    padding: 12px 20px;
+    font-size: 1em;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    font-size: 1em;
+    color: white;
+    padding: 8px 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
