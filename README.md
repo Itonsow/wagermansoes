@@ -1,4 +1,4 @@
-# Wagermansoes
+# WagerMansões
 1. Clone o repositorio
   - Usando o comando 'cd ' va ate o diretorio em que queira clonar o repositorio.
   - Estando no diretorio de sua escolha, utilize o comando 'git clone https://github.com/Itonsow/wagermansoes.git' para fazer o download.
